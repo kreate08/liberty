@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Form CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Request More Information</title>
+  </head>
+  <!-- Main Content -->
+  <body id="bootstrap-overrides">
+    <div class="bg">
+      <div class="logoContainer">
+        <div class="logo">
+          <img class="logo-item" src="imgs/Liberty_logo_white.png" alt="Liberty Logo">
+        </div>
+      </div>
+      <div class="banner-container">
+        <div class="banner-title">
+          <h1>Online Associate Degree in Accounting</h1>
+        </div>
+      </div>
+      <div class="degree-container">
+        <div class="degree-info">
+          <div class="row">
+            <div class="col-12">
+            <p>Get the Skills You Need with an Online Associate Degree in Accounting Earning an associate degree can help you qualify for new career opportunities in less time than a bachelor’s degree. And with Liberty University’s associate in accounting online, you can complete all your business courses on your schedule. Imagine completing an entire degree in 1.5 years with flexible 8-week class formats — all from the comfort of your home or office!</p>
+            </div>
+            <div class="col-12">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary btn-blue" data-toggle="modal" data-target="#formModal">
+                Request More Information
+              </button>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title" id="formModal">Request More Information</h2>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!-- Form -->
+              <div class="container">
+               <form name="requestForm" action="action_page.php" onsubmit="return validateForm()" method="post">
+                 <div class="row">
+                   <div class="col-12">
+                     <label for="degree">What degree type would you like?*</label>
+                   </div>
+                   <div class="col-12">
+                     <select id="study" name="study" required>
+                       <option value="" disabled selected hidden>Select</option>
+                       <option value="communications">Communications</option>
+                       <option value="computer science">Computer Science</option>
+                       <option value="marketing">Marketing</option>
+                     </select>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="col-12">
+                     <label for="study">What would you like to study?*</label>
+                   </div>
+                   <div class="col-12">
+                     <select id="study" name="study" required>
+                       <option value="" disabled selected hidden>Select degree type above</option>
+                       <option value="design">Design</option>
+                       <option value="website development">Website Development</option>
+                       <option value="Social Media">Social Media</option>
+                     </select>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="col-6">
+                     <label for="fname">First Name*</label>
+                     <input type="text" id="fname" name="firstname">
+                   </div>
+                   <div class="col-6">
+                     <label for="lname">Last Name*</label>
+                     <input type="text" id="lname" name="lastname" required>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="col-12">
+                     <label for="email">Email*</label>
+                     <input type="email" id="email" name="email" required>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="col-12">
+                     <label for="phone">Telephone*</label>
+                     <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="col-12">
+                     <label for="address">Address*</label>
+                     <input type="addr" id="addr" name="address" placeholder="Enter a location" required>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="col-12">
+                     <input type="submit" value="Tell Me More">
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="col-12">
+                     <p class="disclaimer">By submitting contact information through this form, I agree that Liberty University and its affiliates may call and/or text me about its offerings by any phone number I have provided and may provide in the future, including any wireless number, using automated technology. Message and data rates may apply. For additional information, text HELP to 49595 or 49596. You may opt-out at any time by sending STOP to 49595 or 49596. Visit for Terms & Conditions and Privacy Policy.</p>
+                   </div>
+                 </div>
+                 <div class="row">
+                  <div class="col-12">
+                    <h3 class="lineBreak"><span>OR</span></h3>
+                  </div>
+                 </div>
+                 <div class="row">
+                    <div class="col-12">
+                      <a class="btn btn-primary btn-green" href="https://liberty.edu" role="button">Apply Now</a>
+                    </div>
+                  </div>
+               </form>
+            </div>
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+  </div>
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

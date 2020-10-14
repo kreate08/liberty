@@ -1,0 +1,162 @@
+/* Headers */
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2#formModal {
+  margin: 0 auto;
+}
+
+h3.lineBreak {
+  color: rgb(155, 155, 155);
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgb(155, 155, 155);
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
+h3.lineBreak span {
+  background: #f2f2f2;
+  padding:0 10px;
+}
+
+/* Page */
+
+body, html {
+  height: 100%;
+}
+
+.bg {
+  background-image: url("../imgs/AA-in-Accounting-1.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-container {
+  margin: 2em auto;
+}
+
+.degree-container {
+  max-width: 1290px;
+  margin: 0px auto;
+  padding: 0px 25px;
+}
+
+.logoContainer {
+  background: #1C2840;
+}
+
+.degree-info {
+    display: flex;
+    max-width: 1290px;
+    min-height: 206px;
+    box-shadow: rgba(0, 0, 0, 0.36) 0px 1px 8px -2px;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(240, 240, 240);
+    border-radius: 5px;
+    padding: 2em;
+}
+
+.logo {
+  margin: 0 auto;
+  text-align: center;
+  padding: 1em;
+}
+
+.logo-item {
+  width: 100px;
+  height: auto;
+}
+
+button.btn.btn-primary.btn-blue {
+  background: #2773CB;
+  padding: 15px 30px;
+  color: #fff;
+  border-radius: 2px;
+}
+button.btn.btn-primary.btn-blue:hover {
+  background: #1e65b7;
+}
+a.btn.btn-primary.btn-green {
+  background: #00AA72;
+  padding: 15px 30px;
+  width: 100%;
+  color: #fff;
+  border-radius: 0;
+  border: none;
+}
+a.btn.btn-primary.btn-green {
+  color: #fff;
+}
+
+.disclaimer {
+  font-size: .625em;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* Modal */
+
+#bootstrap-overrides .modal-content {
+  border-radius: 0;
+  background-color: #f2f2f2;
+}
+
+#bootstrap-overrides .modal-header .close {
+  display: none;
+}
+
+#bootstrap-overrides .modal-header {
+  border-bottom: none;
+}
+
+#bootstrap-overrides .modal-body {
+  padding: 0 1rem;
+}
+
+/* Style inputs, select elements and textareas */
+input[type=text], input[type=email], input[type=tel], input[type=addr], select, textarea{
+ width: 100%;
+ padding: 12px;
+ border: 1px solid #ccc;
+ box-sizing: border-box;
+ resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+ padding: 12px 12px 12px 0;
+ margin-bottom: 0;
+ display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+ background: #2773CB;
+ color: white;
+ padding: 20px;
+ border: none;
+ cursor: pointer;
+ width: 100%;
+}
+
+/* Style the container and form */
+.container {
+ border-radius: 5px;
+ padding: 20px;
+ margin: 0 auto;
+}
+
+.row {
+  margin-bottom: 1.25em;
+}
+
+form {
+  padding: 0 1em;
+}
